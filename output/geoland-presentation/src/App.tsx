@@ -17,7 +17,7 @@ function App() {
     if (currentIdx < slides.length) {
       setIsAnimating(true);
       setCurrentIdx(prev => prev + 1);
-      setTimeout(() => setIsAnimating(false), 1200); // Matching animation duration
+      setTimeout(() => setIsAnimating(false), 400); // Matching animation duration
     }
   }, [currentIdx, isAnimating]);
 
@@ -26,7 +26,7 @@ function App() {
     if (currentIdx > -1) {
       setIsAnimating(true);
       setCurrentIdx(prev => prev - 1);
-      setTimeout(() => setIsAnimating(false), 1200);
+      setTimeout(() => setIsAnimating(false), 400);
     }
   }, [currentIdx, isAnimating]);
 
@@ -109,7 +109,7 @@ function App() {
             initial={{ opacity: 0, filter: "blur(20px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0, scale: 1.1, filter: "blur(10px)" }}
-            transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 z-10 bg-black"
           >
             <div className="absolute inset-0 z-0 overflow-hidden">
@@ -135,7 +135,7 @@ function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 1.2 }}
+              transition={{ duration: 0.4 }}
               className="absolute inset-0 bg-black"
             >
               <Chapter 
@@ -152,7 +152,7 @@ function App() {
             initial={{ opacity: 0, filter: "blur(20px)" }}
             animate={{ opacity: 1, filter: "blur(0px)" }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0 z-10 bg-black"
           >
             <div className="absolute inset-0 z-0 overflow-hidden">
