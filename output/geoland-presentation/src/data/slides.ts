@@ -276,7 +276,7 @@ export const slides: SlideData[] = [
   {
     id: 31,
     title: "La locación linda que arruina el rodaje.",
-    text: "Una plaza histórica en Praga obtiene un match visual de 97%, pero GEOLAND detecta que el ángulo solar en la semana de rodaje genera sombras duras exactamente durante la ventana prevista de cámara, además de alto flujo turístico entre las 10:30 y las 13:00. El sistema recomienda una plaza secundaria con 91% de similitud visual, pero con mejor orientación solar, menor tráfico peatonal, acceso lateral para camiones técnicos y permisos más rápidos. Visualmente era apenas inferior; productivamente era muy superior.",
+    text: "En Praga, la locación con 97% de match visual parecía ideal, pero tenía sombras críticas, alto flujo turístico y fricción logística. GEOLAND recomendó una alternativa con 91% de similitud visual: apenas inferior visualmente, pero operacionalmente muy superior.",
     variant: "titulo-cuerpo-bold",
     backgroundMedia: "32.mp4",
     overlayOpacity: 45,
