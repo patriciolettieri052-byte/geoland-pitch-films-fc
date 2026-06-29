@@ -29,7 +29,7 @@ export const slides: SlideData[] = [
   {
     id: 2,
     title: "UNA LOCACIÓN NO ES SOLO FILMAR",
-    text: "Es permisos, accesos, tráfico, parking, seguridad, equipo, comunidad,<br/>ruido y cientos de variables más.<br/><br/><span style='font-size: 15px; opacity: 0.5; font-family: \"Arimo\", sans-serif;'>— <em>NYC Mayor’s Office of Media & Entertainment.</em></span>",
+    text: "<span style='font-size: 28px; display: block; line-height: 1.3;'>ES PERMISOS, ACCESOS, TRÁFICO, PARKING, SEGURIDAD, EQUIPO, COMUNIDAD,<br/>RUIDO Y CIENTOS DE VARIABLES MÁS.</span><br/><span style='font-size: 15px; color: #ffffff; font-family: \"Arimo\", sans-serif;'>— <em>NYC Mayor’s Office of Media & Entertainment.</em></span>",
     variant: "titulo-chico",
     backgroundMedia: "1.mp4",
     overlayOpacity: 45
