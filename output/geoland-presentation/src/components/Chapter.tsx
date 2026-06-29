@@ -174,11 +174,20 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
               />
             </>
           ) : (
-            <img 
-              src={`assets/${backgroundMedia}`} 
-              className="w-full h-full object-cover"
-              alt="background"
-            />
+            <>
+              <img 
+                src={`assets/${backgroundMedia}`} 
+                className={`w-full h-full object-cover ${id === 12 ? 'print:hidden' : ''}`}
+                alt="background"
+              />
+              {id === 12 && (
+                <img 
+                  src="assets/12.png" 
+                  className="w-full h-full object-cover hidden print:block"
+                  alt="background-print"
+                />
+              )}
+            </>
           )
         )}
         {/* Dark Overlay - ensures text readability */}
