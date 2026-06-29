@@ -174,7 +174,8 @@ Error generating stack: `+a.message+`
       Fuente: Motion Picture Association.
     </span>
   </div>
-\\n  <!-- Card 2 -->
+
+  <!-- Card 2 -->
   <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
     <div>
       <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">+USD 300K/día</span>
@@ -186,14 +187,17 @@ Error generating stack: `+a.message+`
       Fuente: Olsberg·SPI / Motion Picture Association
     </span>
   </div>
-\\n  <!-- Card 3 -->
+
+  <!-- Card 3 -->
   <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
     <div>
       <span class="text-white text-2xl md:text-3xl font-normal uppercase tracking-wider block mb-3 font-jost" style="font-family:'League Gothic',sans-serif; letter-spacing: 0.05em;">Decenas de variables</span>
       <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-2 font-arimo">
-        permisos, accesos, tráfico, parking, generadores, seguridad, ruido y comunidad.\\n      </p>
+        permisos, accesos, tráfico, parking, generadores, seguridad, ruido y comunidad.
+      </p>
       <p class="text-white/45 text-[10px] leading-relaxed mb-6 font-light font-arimo">
-        El documento regula notificaciones comunitarias, parking, accesos, vehículos, tráfico, peatones, equipo, generadores, seguridad, ruido, luz, propiedad privada, vecinos y limpieza; advirtiendo que violaciones pueden derivar en la suspensión o revocación del permiso.\\n      </p>
+        El documento regula notificaciones comunitarias, parking, accesos, vehículos, tráfico, peatones, equipo, generadores, seguridad, ruido, luz, propiedad privada, vecinos y limpieza; advirtiendo que violaciones pueden derivar en la suspensión o revocación del permiso.
+      </p>
     </div>
     <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">
       Fuente: NYC Mayor’s Office of Media and Entertainment
