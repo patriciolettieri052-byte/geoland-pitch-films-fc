@@ -9,7 +9,7 @@ export interface SlideData {
   isBold?: boolean;
   isItalic?: boolean;
   titleSize?: string;
-  variant?: "subtitulo" | "titulo" | "portada" | "portada81" | "portadafinal" | "texto" | "barras" | "barras-pro" | "apertura" | "apertura2" | "hub" | "backtest-stats" | "backtest-cities" | "numeric" | "business-units" | "reviews" | "neural-map" | "titulo-grande" | "titulo-chico" | "advisors" | "roadmap" | "soluciones-grid" | "diagrama-fuentes" | "diagrama-expansion" | "market" | "pricing" | "texto-arriba" | "titulo-cuerpo-bold" | "validation-hud";
+  variant?: "subtitulo" | "titulo" | "portada" | "portada81" | "portadafinal" | "texto" | "barras" | "barras-pro" | "apertura" | "apertura2" | "hub" | "backtest-stats" | "backtest-cities" | "numeric" | "business-units" | "reviews" | "neural-map" | "titulo-grande" | "titulo-chico" | "advisors" | "roadmap" | "soluciones-grid" | "diagrama-fuentes" | "diagrama-expansion" | "market" | "pricing" | "texto-arriba" | "titulo-cuerpo-bold" | "validation-hud" | "proyecciones-hud";
   align?: "left" | "center" | "right" | "center-left";
   maxWidth?: string;
   ctaUrl?: string;
@@ -28,55 +28,90 @@ export const slides: SlideData[] = [
   },
   {
     id: 2,
-    title: "EN EL MUNDO SE GENERAN 402M DE TERABYTES DE INFORMACIÓN POR DÍA.",
-    text: "Pero las decisiones más importantes todavía dependen de sistemas fragmentados.<br/>— Exploding Topics.",
-    variant: "titulo-grande",
-    backgroundMedia: "3.mp4",
-    overlayOpacity: 45,
-    maxWidth: "1000px"
+    title: "UNA LOCACIÓN NO ES SOLO FILMAR. ES PERMISOS, ACCESOS, TRÁFICO, PARKING, SEGURIDAD, EQUIPO, COMUNIDAD, RUIDO Y CIENTOS DE VARIABLES MÁS.",
+    text: "— <em>NYC Mayor’s Office of Media & Entertainment.</em>",
+    variant: "titulo-chico",
+    backgroundMedia: "1.mp4",
+    overlayOpacity: 45
   },
   {
     id: 3,
-    title: "",
-    text: "30% | IDC | Tiempo perdido por profesionales buscando y organizando información ;; 40% | Techdata | De empresas reporta pérdidas por datos fragmentados.",
-    variant: "numeric",
-    backgroundMedia: "4.mp4",
+    title: "TODAS LAS VARIABLES FRAGMENTADAS. HACIENDO LA TAREA LENTA Y COSTOSA.",
+    text: "",
+    variant: "titulo-chico",
+    backgroundMedia: "2.mp4",
     overlayOpacity: 45
   },
   {
     id: 4,
-    title: "3% DEL BENEFICIO ANUAL PERDIDO",
-    text: "Por malas decisiones y datos fragmentados.<br/>— Gartner.",
-    variant: "titulo-grande",
-    backgroundMedia: "5.mp4",
+    title: "<span style='font-size: 140px; display: block; line-height: 0.9; margin-bottom: 16px; font-family: \"League Gothic\", sans-serif;'>1</span>UNA SOLA VARIABLE NO DETECTADA COMPROMETE TODA LA PRODUCCIÓN.",
+    text: "",
+    variant: "titulo-chico",
+    backgroundMedia: "3.mp4",
     overlayOpacity: 45
   },
   {
     id: 5,
-    title: "USD 95B DE PÉRDIDAS EN LOGÍSTICA",
-    text: "Por año sólo en Estados Unidos por ineficiencias.<br/>— McKinsey.",
-    variant: "titulo-grande",
-    backgroundMedia: "6.mp4",
-    overlayOpacity: 45
+    title: "UN ERROR PUEDE COSTAR CIENTOS DE MILES DE EUROS.",
+    text: `<div class="flex flex-col md:flex-row gap-6 justify-center items-stretch w-full max-w-[1250px] mx-auto mt-6 text-left">\n  <!-- Card 1 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">USD 670K–1.3M</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">\n        por día de rodaje en locación en producciones profesionales.\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: Motion Picture Association.\n    </span>\n  </div>\n\\n  <!-- Card 2 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">+USD 300K/día</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">\n        de gasto local promedio en producciones high-budget.\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: Olsberg·SPI / Motion Picture Association\n    </span>\n  </div>\n\\n  <!-- Card 3 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-2xl md:text-3xl font-normal uppercase tracking-wider block mb-3 font-jost" style="font-family:'League Gothic',sans-serif; letter-spacing: 0.05em;">Decenas de variables</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-2 font-arimo">\n        permisos, accesos, tráfico, parking, generadores, seguridad, ruido y comunidad.\\n      </p>\n      <p class="text-white/45 text-[10px] leading-relaxed mb-6 font-light font-arimo">\n        El documento regula notificaciones comunitarias, parking, accesos, vehículos, tráfico, peatones, equipo, generadores, seguridad, ruido, luz, propiedad privada, vecinos y limpieza; advirtiendo que violaciones pueden derivar en la suspensión o revocación del permiso.\\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: NYC Mayor’s Office of Media and Entertainment\n    </span>\n  </div>\n</div>`,
+    variant: "titulo-chico",
+    backgroundMedia: "4.mp4",
+    overlayOpacity: 45,
+    align: "center-left",
+    maxWidth: "1250px"
   },
   {
     id: 6,
-    title: "USD 11B DE PÉRDIDAS EN LA INDUSTRIA AÉREA",
-    text: "En 2025 por ineficiencias operativas y fragmentación en supply chain.<br/>— IATA + Oliver Wyman.",
-    variant: "titulo-grande",
-    backgroundMedia: "7.mp4",
+    title: "UNA OBRA EN CONSTRUCCIÓN AL LADO DEL SET NO DETECTADA",
+    text: "Martillos, taladros y vibraciones contaminan el sonido directo. La escena no puede rodarse aunque la locación sea perfecta.",
+    variant: "titulo-chico",
+    backgroundMedia: "5.mp4",
     overlayOpacity: 45
   },
   {
     id: 7,
-    title: "EN CINE, UN SOLO DÍA DE RETRASO PUEDE SIGNIFICAR CIENTOS DE MILES DE EUROS PERDIDOS.",
-    text: "",
+    title: "UN FESTIVAL A METROS DEL RODAJE",
+    text: "Accesos bloqueados, tráfico cortado y seguridad alterada. La producción queda detenida mientras el presupuesto sigue corriendo.",
     variant: "titulo-chico",
-    backgroundMedia: "8.mp4",
+    backgroundMedia: "6.mp4",
     overlayOpacity: 45
   },
   {
     id: 8,
+    title: "UNA RUTA AÉREA SOBRE UNA ESCENA DE ÉPOCA",
+    text: "Cada pocos minutos cruza un avión. La imagen no funciona, el sonido tampoco.",
+    variant: "titulo-chico",
+    backgroundMedia: "7.mp4",
+    overlayOpacity: 45
+  },
+  {
+    id: 9,
+    title: "<style>#slide-9 h2 { width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; }</style><div class='flex flex-col items-center justify-center text-center w-full mb-4 pt-4' style='line-height: 1.2;'><img src='assets/revenant-logo.png' alt='The Revenant' class='w-auto h-[55px] md:h-[85px] object-contain mb-3 block mx-auto' /><span class='block'>FALTA DE NIEVE</span></div>",
+    text: "<div class='text-left w-full'><strong>Problema real:</strong> la producción estaba rodando en Canadá, pero se quedaron sin nieve para una película que dependía visualmente de paisajes nevados. Eligieron mal.<br/><br/><strong>Consecuencia:</strong> tuvieron que mover parte de la producción a Patagonia, Argentina.<br/><br/><strong>Impacto económico:</strong> el traslado y seis días extra de rodaje en Patagonia costaron aproximadamente<br/><strong>USD 10M</strong> no previstos.</div>",
+    variant: "titulo-chico",
+    backgroundMedia: "8.mp4",
+    overlayOpacity: 45,
+    align: "center-left",
+    maxWidth: "750px"
+  },
+  {
+    id: 10,
+    title: "EL PROBLEMA NO ES ENCONTRAR UNA BUENA LOCACIÓN.",
+    text: "ES DESCUBRIR DEMASIADO TARDE QUE NUNCA DEBIÓ ELEGIRSE.",
+    variant: "titulo-chico",
+    backgroundMedia: "9.mp4",
+    overlayOpacity: 45
+  },
+  {
+    id: 11,
+    title: "EL PROBLEMA NO ES LA FALTA DE INFORMACIÓN.",
+    text: "ES LA INCAPACIDAD HUMANA PARA CONECTARLA.",
+    variant: "titulo-chico",
+    backgroundMedia: "",
+    overlayOpacity: 0
+  },
+  {
+    id: 12,
     title: "EN UN MERCADO GLOBAL DE USD 360B ANUALES.",
     text: "",
     variant: "titulo-chico",
@@ -84,7 +119,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 9,
+    id: 13,
     title: "+300.000 PRODUCTORAS EN EL MUNDO",
     text: "",
     variant: "titulo-chico",
@@ -92,7 +127,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 10,
+    id: 14,
     title: "+9.500 PELICULAS A NIVEL GLOBAL POR AÑO",
     text: "SIN CONTAR: series, publicidad, branded content, eventos, fashion productions,<br/>streaming content.",
     variant: "titulo-grande",
@@ -100,7 +135,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 11,
+    id: 15,
     title: "MILLONES DE LOCACIONES Y DECISIONES<br/>OPERACIONALES CADA AÑO.",
     text: "Eso significa:",
     variant: "texto-arriba",
@@ -108,7 +143,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 0
   },
   {
-    id: 12,
+    id: 16,
     title: "MERCADO FRAGMENTADO",
     text: "Hoy las búsquedas de locaciones operan de forma fragmentada, combinando<br/>scouts, referencias visuales, contactos y análisis humanos en procesos que pueden<br/>llevar semanas o incluso meses para encontrar la locación adecuada.",
     variant: "titulo-chico",
@@ -116,7 +151,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 13,
+    id: 17,
     title: "EL PROBLEMA REAL",
     text: "<strong>La industria NO tiene un sistema global de decisión estandarizado.</strong><br/>Tiene: imágenes, bases dispersas, scouts, intuición, contactos, y mucha fricción.",
     variant: "titulo-chico",
@@ -124,7 +159,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 14,
+    id: 18,
     title: "NINGUNA ORGANIZA LA DECISIÓN OPERACIONAL COMPLETA.",
     text: "",
     variant: "titulo-chico",
@@ -132,44 +167,12 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 15,
+    id: 19,
     title: "THE IDEA",
     text: "",
     variant: "titulo-grande",
     backgroundMedia: "",
     overlayOpacity: 0
-  },
-  {
-    id: 16,
-    title: "DURANTE AÑOS, LAS EMPRESAS CONSTRUYERON SISTEMAS PARA ALMACENAR DATOS.",
-    text: "",
-    variant: "titulo-chico",
-    backgroundMedia: "17.mp4",
-    overlayOpacity: 45
-  },
-  {
-    id: 17,
-    title: "DESPUÉS, PARA PROCESARLOS.",
-    text: "",
-    variant: "titulo-chico",
-    backgroundMedia: "18.mp4",
-    overlayOpacity: 45
-  },
-  {
-    id: 18,
-    title: "AHORA, VIENE LA CAPA QUE FALTA.",
-    text: "",
-    variant: "titulo-chico",
-    backgroundMedia: "",
-    overlayOpacity: 0
-  },
-  {
-    id: 19,
-    title: "LA DE DECISIÓN.",
-    text: "Los datos por sí solos no hacen al mundo más inteligente.<br/>Las decisiones que tomamos con ellos sí.",
-    variant: "titulo-grande",
-    backgroundMedia: "20.mp4",
-    overlayOpacity: 45
   },
   {
     id: 20,
@@ -286,7 +289,7 @@ export const slides: SlideData[] = [
   {
     id: 32,
     title: "Continuidad visual entre ciudades distintas.",
-    text: "El guion pedía París, Viena y una ciudad alpina, pero GEOLAND detectó que varias escenas podían resolverse en un único cluster operativo en Budapest y alrededores, manteniendo continuidad visual europea. Menos traslados, menos permisos y menor complejidad operativa, sin que el espectador percibiera la sustitución.",
+    text: "El guion pedía París, Viena y una ciudad alpina, pero GEOLAND detectó que varias escenas podían resolverse en un único cluster operativo en Budapest, manteniendo continuidad visual europea y reduciendo traslados, permisos y complejidad.",
     variant: "titulo-cuerpo-bold",
     backgroundMedia: "33.mp4",
     overlayOpacity: 45,
@@ -296,7 +299,7 @@ export const slides: SlideData[] = [
   {
     id: 33,
     title: "El rebate que no conviene.",
-    text: "Una ciudad ofreció el incentivo fiscal más alto, pero GEOLAND detectó que permisos, distancias y falta de proveedores anulaban parte del beneficio. Recomendó otra con menor incentivo, pero mejor infraestructura, crew local y logística: el mayor incentivo fiscal no siempre es la mejor decisión económica.",
+    text: "Una ciudad ofrecía el mayor incentivo fiscal, pero GEOLAND detectó que permisos, distancias y falta de proveedores reducían gran parte del ahorro. Recomendó otra con menor incentivo, pero mejor infraestructura y logística: fiscalmente parecía peor; económicamente era mejor.",
     variant: "titulo-cuerpo-bold",
     backgroundMedia: "34.mp4",
     overlayOpacity: 45,
@@ -435,6 +438,14 @@ export const slides: SlideData[] = [
   },
   {
     id: 50,
+    title: "PROYECCIONES",
+    text: "",
+    variant: "proyecciones-hud",
+    backgroundMedia: "",
+    overlayOpacity: 0
+  },
+  {
+    id: 51,
     title: "EL PATRÓN ES SIEMPRE EL MISMO:",
     text: "Datos fragmentados -> análisis complejo -> decisión clara.",
     variant: "titulo-grande",
@@ -442,7 +453,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 51,
+    id: 52,
     title: "TEAM",
     text: "",
     variant: "titulo-grande",
@@ -450,18 +461,9 @@ export const slides: SlideData[] = [
     overlayOpacity: 0
   },
   {
-    id: 52,
-    title: "",
-    text: `<div class='flex flex-col md:flex-row print:flex-row gap-16 justify-center items-start w-full max-w-[1200px] mx-auto mt-4'><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><img src='team/pato_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top mb-8 [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Patricio Lettieri</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder - Data Infrastucture</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Especialista en data, análisis e IA aplicada, con más de 15 años de experiencia en marketing analítico y operaciones estratégicas para marcas como John Deere y Porsche. En GEOLAND conecta fuentes de datos, modelos inteligentes y ejecución operativa para transformar información compleja en decisiones claras y accionables.</p></div><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><div class='scale-[1.15] origin-top print:scale-100 mb-8'><img src='team/pepe_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /></div><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>José Luis Curcio</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder, Product vision & Strategy</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Publicista, estratega y director creativo con más de 18 años innovando para marcas globales como Coca-Cola, Ford y Samsung. Desde su experiencia en campañas y rodajes internacionales, conceptualizó GEOLAND y hoy lidera la visión, el diseño estratégico y la orquestación del equipo para convertir creatividad, tecnología y complejidad operativa en un sistema de inteligencia de decisión.</p></div></div>`,
-    backgroundMedia: "",
-    overlayOpacity: 0,
-    align: "center",
-    maxWidth: "1400px"
-  },
-  {
     id: 53,
     title: "",
-    text: `<div class='flex flex-col md:flex-row print:flex-row gap-16 justify-center items-start w-full max-w-[1200px] mx-auto mt-4'><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><div class='scale-[1.25] origin-top print:scale-100 mb-8'><img src='team/juancarlos_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /></div><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Juan Carlos Casalderrey</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Partner - Engineering / Mythology Labs</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Formado en Arquitectura y Diseño de Sistemas y Contratos Complejos en Tecnología. Desarrollador, consultor técnico y Co-Founder de Mythology Labs. En GEOLAND, aporta criterio técnico, liderazgo operativo y capacidad para ejecutar una plataforma robusta, escalable y orientada a negocio.</p></div><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><img src='team/damian_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top mb-8 [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Damián Scheck</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Partner - Engineering / Mythology Labs</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Analista de Sistemas de Computación, Licenciado en Sistemas, desarrollador de software, Co-Founder y CTO de Mythology Labs. En GEOLAND, lidera la arquitectura técnica, la calidad del código y el desarrollo de una plataforma robusta, escalable y segura, preparada para crecer con estándares profesionales de ingeniería.</p></div></div>`,
+    text: `<div class='flex flex-col md:flex-row print:flex-row gap-16 justify-center items-start w-full max-w-[1200px] mx-auto mt-4'><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><img src='team/pato_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top mb-8 [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Patricio Lettieri</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder - Data Infrastucture</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Especialista en data, analítica e IA aplicada, con más de 15 años de experiencia en marketing analytics y operaciones estratégicas para marcas como John Deere y Porsche. En GEOLAND lidera la arquitectura de datos y la transformación de información compleja en decisiones accionables.</p></div><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><div class='scale-[1.15] origin-top print:scale-100 mb-8'><img src='team/pepe_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /></div><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>José Luis Curcio</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder, Product vision & Strategy</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Publicista, estratega y director creativo con más de 18 años de experiencia para marcas globales como Coca-Cola, Ford y Samsung, y trayectoria directa en campañas, producciones y rodajes internacionales. Esa experiencia dio origen a GEOLAND; hoy lidera la visión de producto y estrategia.</p></div></div>`,
     backgroundMedia: "",
     overlayOpacity: 0,
     align: "center",
@@ -469,6 +471,15 @@ export const slides: SlideData[] = [
   },
   {
     id: 54,
+    title: "",
+    text: `<div class='flex flex-col md:flex-row print:flex-row gap-16 justify-center items-start w-full max-w-[1200px] mx-auto mt-4'><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><div class='scale-[1.25] origin-top print:scale-100 mb-8'><img src='team/juancarlos_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /></div><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Juan Carlos Casalderrey</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder & Engineering Strategy</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Arquitecto de sistemas y co-founder de Mythology Labs, con experiencia en desarrollo, consultoría técnica y plataformas escalables. En GEOLAND aporta criterio técnico, arquitectura operativa y visión de ingeniería para construir una plataforma robusta y orientada a negocio.</p></div><div class='flex flex-col items-center text-center w-full md:w-1/2 print:w-1/2'><img src='team/damian_transparent.png' class='w-48 h-48 md:w-64 md:h-64 print:w-64 print:h-64 object-cover object-top mb-8 [mask-image:linear-gradient(to_bottom,black_60%,transparent_100%)] print:[mask-image:none]' /><h3 style="font-family:'League Gothic',sans-serif;font-size:1.9rem;letter-spacing:0.12em;" class='text-white mb-2 uppercase'>Damián Scheck</h3><h4 class='text-geoland-blue tracking-[0.2em] text-xs md:text-sm uppercase mb-4' style="font-family:'Arimo',sans-serif;">Co-Founder & CTO</h4><p style="font-family:'Arimo',sans-serif;" class='text-white/70 text-sm md:text-base leading-relaxed font-light text-center max-w-[420px] mx-auto'>Analista de sistemas, desarrollador de software y CTO de Mythology Labs. En GEOLAND lidera la arquitectura técnica, la calidad del código y el desarrollo de una plataforma robusta, escalable y preparada para crecer con estándares profesionales de ingeniería.</p></div></div>`,
+    backgroundMedia: "",
+    overlayOpacity: 0,
+    align: "center",
+    maxWidth: "1400px"
+  },
+  {
+    id: 55,
     title: "VALIDACIÓN INICIAL",
     text: "",
     variant: "validation-hud",
@@ -476,20 +487,12 @@ export const slides: SlideData[] = [
     overlayOpacity: 0
   },
   {
-    id: 55,
+    id: 56,
     title: "ASESORES & EARLY USERS",
     text: "Andy Hosman | Director | Luky Monday - US & LATAM / Go East Creative - Middle East & Asia / Hungry Man - Brasil / Oriental Films - U.S, LATAM, Spain. ;; Nico Bottero | Director & Producer | Los Modernos Films - Traviamento Films / Netflix - Coordinador de Arte. ;; Oliver Garland | Director & Founder | Olga Lee - Producción audiovisual destacada con presencia global, laureada a nivel internacional - U.S, LATAM, Europe. ;; Paulo Carneiro | Director & Execitive Producer | Máster por la ESTC de Lisboa y HEAD de Ginebra. En 2018 fundó Bam Bam Cinema y dirigió Bostofrio, premiada y exhibida en más de 40 festivales. Sus trabajos posteriores incluyen Périphérique Nord y A savana e a Montanha (2024), también premiada. ;; Fede Cetta | Executive Producer & Founder | El Cielo Cine - Reconocida por su proyección internacional, sus producciones han participado en festivales de Cannes, Visions du Réel, BAFICI y Ventana Sur. La compañía desarrolla largometrajes, documentales y producciones internacionales premiadas. ;; Natalia Azzato | Producer | El Camino Films - Productora audiovisual con operaciones en Uruguay, Argentina, Brasil y Chile, especializada en brindar soporte de producción en Sudamérica para proyectos internacionales, especialmente de Norteamérica y Europa.",
     variant: "advisors",
     backgroundMedia: "53.png",
     overlayOpacity: 45
-  },
-  {
-    id: 56,
-    title: "ALCANCE OPERATIVO & ROADMAP",
-    text: "",
-    variant: "roadmap",
-    backgroundMedia: "",
-    overlayOpacity: 0
   },
   {
     id: 57,
@@ -526,7 +529,7 @@ export const slides: SlideData[] = [
     overlayOpacity: 45
   },
   {
-    id: 61,
+    id: 72,
     title: "LET'S TALK",
     text: "",
     variant: "titulo-grande",

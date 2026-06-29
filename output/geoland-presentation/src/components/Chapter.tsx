@@ -8,6 +8,7 @@ import DiagramaExpansion from './DiagramaExpansion';
 import RoadmapCinematic from './RoadmapCinematic';
 import AdvisorsHud from './AdvisorsHud';
 import ValidationHud from './ValidationHud';
+import ProyeccionesHud from './ProyeccionesHud';
 
 interface ChapterProps {
   id: number;
@@ -20,7 +21,7 @@ interface ChapterProps {
   isItalic?: boolean;
   overline?: string;
   titleSize?: string;
-  variant?: "subtitulo" | "titulo" | "portada" | "portada81" | "portadafinal" | "texto" | "barras" | "barras-pro" | "apertura" | "apertura2" | "hub" | "backtest-stats" | "backtest-cities" | "numeric" | "business-units" | "reviews" | "neural-map" | "titulo-grande" | "titulo-chico" | "advisors" | "roadmap" | "soluciones-grid" | "diagrama-fuentes" | "diagrama-expansion" | "market" | "pricing" | "texto-arriba" | "titulo-cuerpo-bold" | "validation-hud";
+  variant?: "subtitulo" | "titulo" | "portada" | "portada81" | "portadafinal" | "texto" | "barras" | "barras-pro" | "apertura" | "apertura2" | "hub" | "backtest-stats" | "backtest-cities" | "numeric" | "business-units" | "reviews" | "neural-map" | "titulo-grande" | "titulo-chico" | "advisors" | "roadmap" | "soluciones-grid" | "diagrama-fuentes" | "diagrama-expansion" | "market" | "pricing" | "texto-arriba" | "titulo-cuerpo-bold" | "validation-hud" | "proyecciones-hud";
   align?: "left" | "center" | "right" | "center-left";
   maxWidth?: string;
   ctaUrl?: string;
@@ -199,11 +200,13 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
         variants={containerVariants}
         initial="initial"
         animate="animate"
-        className={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' ? "absolute inset-0 z-30" : `relative z-20 w-full px-8 flex flex-col ${align === 'left' ? 'items-start text-left' : align === 'right' ? 'items-end text-right' : align === 'center-left' ? 'items-center text-left' : 'items-center text-center'}`}
-        style={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' ? { width: '100%', height: '100%' } : { 
+        className={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' || variant === 'proyecciones-hud' ? "absolute inset-0 z-30" : `relative z-20 w-full px-8 flex flex-col ${align === 'left' ? 'items-start text-left' : align === 'right' ? 'items-end text-right' : align === 'center-left' ? 'items-center text-left' : 'items-center text-center'}`}
+        style={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' || variant === 'proyecciones-hud' ? { width: '100%', height: '100%' } : { 
           maxWidth: maxWidth || (variant?.startsWith('backtest') || variant === 'business-units' || variant === 'reviews' ? '1400px' : '1045px'),
           paddingLeft: align === 'left' ? ((id >= 24 && id <= 29) || id === 34 ? '120px' : '50px') : undefined,
-          paddingRight: align === 'right' ? ((id >= 24 && id <= 29) || id === 34 ? '120px' : '50px') : undefined
+          paddingRight: align === 'right' ? ((id >= 24 && id <= 29) || id === 34 ? '120px' : '50px') : undefined,
+          paddingTop: '80px',
+          paddingBottom: '80px'
         }}
       >
         {variant === 'reviews' ? (
@@ -980,6 +983,8 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
           </div>
         ) : variant === 'validation-hud' ? (
           <ValidationHud />
+        ) : variant === 'proyecciones-hud' ? (
+          <ProyeccionesHud />
         ) : variant === 'advisors' ? (
           <AdvisorsHud title={title} text={text} />
         ) : variant === 'roadmap' ? (

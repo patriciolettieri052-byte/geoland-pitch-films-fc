@@ -155,7 +155,7 @@ const ValidationHud: React.FC = () => {
             tag="BETA NETWORK"
             title="PRODUCTORAS ACTIVAS"
             statNumber="6"
-            statLabel="PRODUCTORAS DE CINE"
+            statLabel="PRODUCTORAS ACTIVAS VALIDANDO"
             subtext="Actualmente testeando y nutriendo el sistema de manera privada."
             delay={0.2}
           />
@@ -167,7 +167,7 @@ const ValidationHud: React.FC = () => {
             title="VALIDACIÓN DE PAGO"
             statNumber="4"
             statLabel="PRODUCTORAS INTERESADAS"
-            subtext="De las 6 productoras activas, afirman explícitamente que pagarían por un producto con estas características."
+            subtext="De las 6 productoras activas validando, afirman explícitamente que pagarían por un producto con estas características."
             delay={0.3}
           />
         </div>
