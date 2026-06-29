@@ -766,7 +766,7 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
             </motion.div>
             
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-8 w-full items-stretch justify-center mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-12 w-full items-stretch justify-center mb-8">
               {/* Card 1: On-Demand */}
               <motion.div 
                 variants={itemVariants}
