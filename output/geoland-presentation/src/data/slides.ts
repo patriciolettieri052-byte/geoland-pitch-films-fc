@@ -53,7 +53,49 @@ export const slides: SlideData[] = [
   {
     id: 5,
     title: "UN ERROR PUEDE COSTAR CIENTOS DE MILES DE EUROS.",
-    text: `<div class="flex flex-col md:flex-row gap-6 justify-center items-stretch w-full max-w-[1250px] mx-auto mt-6 text-left">\n  <!-- Card 1 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">USD 670K–1.3M</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">\n        por día de rodaje en locación en producciones profesionales.\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: Motion Picture Association.\n    </span>\n  </div>\n\\n  <!-- Card 2 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">+USD 300K/día</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">\n        de gasto local promedio en producciones high-budget.\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: Olsberg·SPI / Motion Picture Association\n    </span>\n  </div>\n\\n  <!-- Card 3 -->\n  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">\n    <div>\n      <span class="text-white text-2xl md:text-3xl font-normal uppercase tracking-wider block mb-3 font-jost" style="font-family:'League Gothic',sans-serif; letter-spacing: 0.05em;">Decenas de variables</span>\n      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-2 font-arimo">\n        permisos, accesos, tráfico, parking, generadores, seguridad, ruido y comunidad.\\n      </p>\n      <p class="text-white/45 text-[10px] leading-relaxed mb-6 font-light font-arimo">\n        El documento regula notificaciones comunitarias, parking, accesos, vehículos, tráfico, peatones, equipo, generadores, seguridad, ruido, luz, propiedad privada, vecinos y limpieza; advirtiendo que violaciones pueden derivar en la suspensión o revocación del permiso.\\n      </p>\n    </div>\n    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">\n      Fuente: NYC Mayor’s Office of Media and Entertainment\n    </span>\n  </div>\n</div>`,
+    text: `<div class="flex flex-col md:flex-row gap-6 justify-center items-stretch w-full max-w-[1250px] mx-auto mt-6 text-left">
+  <!-- Card 1 -->
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+    <div>
+      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">USD 670K–1.3M</span>
+      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">
+        por día de rodaje en locación en producciones profesionales.
+      </p>
+    </div>
+    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">
+      Fuente: Motion Picture Association.
+    </span>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+    <div>
+      <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">+USD 300K/día</span>
+      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">
+        de gasto local promedio en producciones high-budget.
+      </p>
+    </div>
+    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">
+      Fuente: Olsberg·SPI / Motion Picture Association
+    </span>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+    <div>
+      <span class="text-white text-2xl md:text-3xl font-normal uppercase tracking-wider block mb-3 font-jost" style="font-family:'League Gothic',sans-serif; letter-spacing: 0.05em;">Decenas de variables</span>
+      <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-2 font-arimo">
+        permisos, accesos, tráfico, parking, generadores, seguridad, ruido y comunidad.
+      </p>
+      <p class="text-white/45 text-[10px] leading-relaxed mb-6 font-light font-arimo">
+        El documento regula notificaciones comunitarias, parking, accesos, vehículos, tráfico, peatones, equipo, generadores, seguridad, ruido, luz, propiedad privada, vecinos y limpieza; advirtiendo que violaciones pueden derivar en la suspensión o revocación del permiso.
+      </p>
+    </div>
+    <span class="text-white/35 text-[9px] tracking-wider uppercase font-light font-arimo">
+      Fuente: NYC Mayor’s Office of Media and Entertainment
+    </span>
+  </div>
+</div>`,
     variant: "titulo-chico",
     backgroundMedia: "4.mp4",
     overlayOpacity: 45,
