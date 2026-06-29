@@ -438,19 +438,19 @@ export const slides: SlideData[] = [
   },
   {
     id: 50,
-    title: "PROYECCIONES",
-    text: "",
-    variant: "proyecciones-hud",
-    backgroundMedia: "",
-    overlayOpacity: 0
-  },
-  {
-    id: 51,
     title: "EL PATRÓN ES SIEMPRE EL MISMO:",
     text: "Datos fragmentados -> análisis complejo -> decisión clara.",
     variant: "titulo-grande",
     backgroundMedia: "49.mp4",
     overlayOpacity: 45
+  },
+  {
+    id: 51,
+    title: "PROYECCIONES",
+    text: "",
+    variant: "proyecciones-hud",
+    backgroundMedia: "",
+    overlayOpacity: 0
   },
   {
     id: 52,
