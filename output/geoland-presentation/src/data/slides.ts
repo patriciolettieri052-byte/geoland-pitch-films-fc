@@ -53,9 +53,9 @@ export const slides: SlideData[] = [
   {
     id: 5,
     title: "UN ERROR PUEDE COSTAR CIENTOS DE MILES DE EUROS.",
-    text: `<div class="flex flex-col md:flex-row gap-6 justify-center items-stretch w-full max-w-[1250px] mx-auto mt-6 text-left">
+    text: `<div class="flex flex-col md:flex-row print:flex-row gap-6 justify-center items-stretch w-full max-w-[1250px] mx-auto mt-6 text-left">
   <!-- Card 1 -->
-  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 print:w-1/3 justify-between">
     <div>
       <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">USD 670K–1.3M</span>
       <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">
@@ -68,7 +68,7 @@ export const slides: SlideData[] = [
   </div>
 
   <!-- Card 2 -->
-  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 print:w-1/3 justify-between">
     <div>
       <span class="text-white text-3xl md:text-4xl font-bold tracking-tight font-jost block mb-3">+USD 300K/día</span>
       <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-6 font-arimo">
@@ -81,7 +81,7 @@ export const slides: SlideData[] = [
   </div>
 
   <!-- Card 3 -->
-  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 justify-between">
+  <div class="flex flex-col p-6 bg-black/60 border border-white/10 rounded-xl backdrop-blur-md w-full md:w-1/3 print:w-1/3 justify-between">
     <div>
       <span class="text-white text-2xl md:text-3xl font-normal uppercase tracking-wider block mb-3 font-jost" style="font-family:'League Gothic',sans-serif; letter-spacing: 0.05em;">Decenas de variables</span>
       <p class="text-white/70 text-xs md:text-sm font-light leading-relaxed mb-2 font-arimo">
