@@ -130,7 +130,7 @@ function App() {
   }
 
   return (
-    <>
+    <MotionConfig transition={{ duration: 0 }} reducedMotion="always">
       {isPortrait && isMobile && (
         <div className="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center p-8 text-center transition-opacity duration-500">
           <div className="mb-8 opacity-60">
@@ -194,12 +194,10 @@ function App() {
             className="absolute inset-0 z-10 bg-black"
           >
             <div className="absolute inset-0 z-0 overflow-hidden">
-              <video 
-                src="assets/portada2.mp4" 
-                autoPlay 
-                muted
-                loop 
+              <img 
+                src="assets/portada2.jpg" 
                 className="w-full h-full object-cover"
+                alt="portada"
               />
               <div className="absolute inset-0 bg-black/60 z-10"></div>
             </div>
@@ -230,7 +228,7 @@ function App() {
       </AnimatePresence>
         </div>
       </main>
-    </>
+    </MotionConfig>
   );
 }
 

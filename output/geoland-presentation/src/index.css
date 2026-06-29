@@ -180,30 +180,29 @@
     align-items: center !important;
     justify-content: center !important;
   }
-
-  /* Forzar visibilidad instantánea de elementos animados (Framer Motion) */
-  h1, h2, h3, h4, h5, h6, p, span, img, svg, circle, rect, text {
-    opacity: 1 !important;
-    transform: none !important;
-    scale: 1 !important;
-  }
-
-  /* Mostrar todos los divs contenedores excepto overlays oscuros de contraste */
-  div:not(.bg-overlay-dark):not(.media-overlay):not(.bg-overlay-dark\/45):not(.bg-black\/60):not(.bg-black\/45):not(.bg-black\/40) {
-    opacity: 1 !important;
-    transform: none !important;
-  }
-
-  /* Dibujar al instante los trazos de los diagramas SVG */
-  svg path {
-    stroke-dasharray: none !important;
-    stroke-dashoffset: 0 !important;
-    opacity: 1 !important;
-  }
-
   /* Desactivar animaciones y transiciones de transición */
   * {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Forzar visibilidad instantánea de elementos animados (Framer Motion) en toda la app */
+h1, h2, h3, h4, h5, h6, p, span, img, svg, circle, rect, text {
+  opacity: 1 !important;
+  transform: none !important;
+  scale: 1 !important;
+}
+
+/* Mostrar todos los divs contenedores excepto overlays oscuros de contraste */
+div:not(.bg-overlay-dark):not(.media-overlay):not(.bg-overlay-dark\/45):not(.bg-black\/60):not(.bg-black\/45):not(.bg-black\/40) {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Dibujar al instante los trazos de los diagramas SVG */
+svg path {
+  stroke-dasharray: none !important;
+  stroke-dashoffset: 0 !important;
+  opacity: 1 !important;
 }
