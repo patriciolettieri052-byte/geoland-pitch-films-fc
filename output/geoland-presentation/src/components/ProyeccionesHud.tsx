@@ -144,7 +144,7 @@ const ProyeccionesHud: React.FC = () => {
       </div>
 
       {/* Bottom Grid of HUD Cards */}
-      <div className="w-full max-w-[1250px] grid grid-cols-1 md:grid-cols-3 gap-5 mb-4">
+      <div className="w-full max-w-[1250px] grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-5 mb-4">
         {/* Card 1: CON €295K FINANCIAMOS */}
         <div className="bg-black/70 border border-white/10 rounded-xl p-5 backdrop-blur-md flex flex-col text-left">
           <h3 className="text-white font-jost font-bold text-[10px] md:text-xs tracking-[0.2em] uppercase mb-4 border-b border-white/10 pb-2 text-left">
