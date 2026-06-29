@@ -171,6 +171,9 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
                 src={`assets/${backgroundMedia.replace(/\.mp4$/i, '.jpg')}`} 
                 className="w-full h-full object-cover hidden print:block"
                 alt="background-poster"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </>
           ) : (
