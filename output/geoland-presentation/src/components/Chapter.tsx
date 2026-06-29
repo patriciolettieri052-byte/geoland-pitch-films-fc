@@ -158,14 +158,21 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
       >
         {backgroundMedia && (
           isVideo ? (
-            <img 
-              src={`assets/${backgroundMedia.replace(/\.mp4$/i, '.jpg')}`} 
-              className="w-full h-full object-cover"
-              alt="background-poster"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-              }}
-            />
+            <>
+              <video 
+                src={backgroundMedia.startsWith('backtesting') || backgroundMedia.startsWith('escala') ? `assets/${backgroundMedia}` : `assets/${backgroundMedia}`}
+                autoPlay 
+                muted
+                loop 
+                playsInline 
+                className="w-full h-full object-cover print:hidden"
+              />
+              <img 
+                src={`assets/${backgroundMedia.replace(/\.mp4$/i, '.jpg')}`} 
+                className="w-full h-full object-cover hidden print:block"
+                alt="background-poster"
+              />
+            </>
           ) : (
             <img 
               src={`assets/${backgroundMedia}`} 
