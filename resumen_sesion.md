@@ -28,6 +28,15 @@ Este documento resume los cambios, mejoras de diseño y optimizaciones de impres
 
 ---
 
+## 3. Emulación Global de Modo Impresión (Vista Interactiva)
+* **Estática Completa en Diapositivas:** Se eliminó la reproducción de videos `.mp4` de fondo en la vista interactiva, forzando el renderizado de sus posters estáticos `.jpg` equivalentes para garantizar una visualización idéntica placa por placa.
+* **Bypass Global de Animaciones:** Se movieron las reglas de visibilidad inmediata y eliminación de transformaciones fuera de la directiva `@media print` en `index.css`. Todos los elementos gráficos, textos y bloques de Framer Motion se renderizan de forma completamente estática e instantánea.
+* **Trazado Completo SVG Global:** Se forzó a que todas las líneas y flujos de conexión de los diagramas SVG (`stroke-dasharray: none !important`) se dibujen al 100% en todas las vistas de la app.
+* **Desactivación de Transiciones de Navegación:** Se envolvió el flujo interactivo de diapositivas en `<MotionConfig transition={{ duration: 0 }} reducedMotion="always">` en `App.tsx`, eliminando cualquier tipo de fundido entre slides.
+* **Portada Estática:** Se configuró el slide de inicio (Intro) para mostrar de fondo la imagen estática `portada2.jpg` en lugar de reproducir `portada2.mp4`.
+
+---
+
 ## 4. Servidores y Entorno Local
 * Se identificó que en el puerto **`5173`** se encuentra activa la versión de **Real Estate / Farmland** de Geoland, mientras que nuestra versión de **Cine (Films)** corre en el puerto **`5175`** (o puertos subsiguientes si el 5173 está en uso).
 * Se verificó que el 100% de los 34 fondos de videos e imágenes de la versión cinematográfica existen y cargan correctamente en local.
@@ -37,4 +46,4 @@ Este documento resume los cambios, mejoras de diseño y optimizaciones de impres
 ## 5. Control de Versiones (GitHub)
 * Todos los cambios de código fueron confirmados y empujados de manera segura a la rama principal en tu repositorio de GitHub:
   * **Rama:** `main`
-  * **Commit final:** `dbaaa2c`
+  * **Commit final:** `9129853`
