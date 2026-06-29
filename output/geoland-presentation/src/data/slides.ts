@@ -86,7 +86,7 @@ export const slides: SlideData[] = [
   },
   {
     id: 9,
-    title: "<style>#slide-9 h2 { width: 100% !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; text-align: center !important; }</style><div class='flex flex-col items-center justify-center text-center w-full mb-4 pt-4' style='line-height: 1.2;'><img src='assets/revenant-logo.png' alt='The Revenant' class='w-auto h-[55px] md:h-[85px] object-contain mb-3 block mx-auto' /><span class='block'>FALTA DE NIEVE</span></div>",
+    title: "<div class='flex flex-col items-start justify-start text-left w-full mb-4 pt-4' style='line-height: 1.2;'><img src='assets/revenant-logo.png' alt='The Revenant' class='w-auto h-[55px] md:h-[85px] object-contain mb-3 block' /><span class='block'>FALTA DE NIEVE</span></div>",
     text: "<div class='text-left w-full'><strong>Problema real:</strong> la producción estaba rodando en Canadá, pero se quedaron sin nieve para una película que dependía visualmente de paisajes nevados. Eligieron mal.<br/><br/><strong>Consecuencia:</strong> tuvieron que mover parte de la producción a Patagonia, Argentina.<br/><br/><strong>Impacto económico:</strong> el traslado y seis días extra de rodaje en Patagonia costaron aproximadamente<br/><strong>USD 10M</strong> no previstos.</div>",
     variant: "titulo-chico",
     backgroundMedia: "8.mp4",
