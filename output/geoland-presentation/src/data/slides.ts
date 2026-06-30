@@ -168,7 +168,7 @@ export const slides: SlideData[] = [
     title: "EN UN MERCADO GLOBAL DE USD 360B ANUALES.",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "9.png",
+    backgroundMedia: "13.png",
     overlayOpacity: 45
   },
   {
@@ -176,7 +176,7 @@ export const slides: SlideData[] = [
     title: "+300.000 PRODUCTORAS EN EL MUNDO",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "10.png",
+    backgroundMedia: "14.mp4",
     overlayOpacity: 45
   },
   {
