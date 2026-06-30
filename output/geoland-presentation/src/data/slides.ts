@@ -40,8 +40,8 @@ export const slides: SlideData[] = [
     title: "SON PERMISOS, ACCESOS, TRÁFICO, PARKING, SEGURIDAD, EQUIPO, COMUNIDAD, RUIDO Y CIENTOS DE VARIABLES MÁS.",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "2.mp4",
-    overlayOpacity: 45
+    backgroundMedia: "",
+    overlayOpacity: 0
   },
   {
     id: 4,
