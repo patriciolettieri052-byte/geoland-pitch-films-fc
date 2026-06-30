@@ -161,8 +161,6 @@
 
   /* Clase para cada slide impreso */
   .print-slide {
-    page-break-after: always !important;
-    break-after: page !important;
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     width: 1920px !important;
@@ -170,6 +168,11 @@
     position: relative !important;
     overflow: hidden !important;
     background-color: #000000 !important;
+  }
+
+  .print-slide:not(:last-child) {
+    page-break-after: always !important;
+    break-after: page !important;
   }
 
   /* Desactivar animaciones y filtros CSS durante la impresión */

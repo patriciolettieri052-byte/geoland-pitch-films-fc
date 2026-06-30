@@ -84,8 +84,7 @@ const NavItem: React.FC<{ slide: NavSlide; index: number; isActive: boolean; onS
 const NavGrid: React.FC<NavGridProps> = ({ isOpen, onClose, onSelect, currentIndex }) => {
   const allSlides = useMemo(() => [
     { id: 'intro', title: 'PORTADA', backgroundMedia: 'portada2.mp4', index: -1 },
-    ...slides.map((s, i) => ({ ...s, index: i })),
-    { id: 'outro', title: 'CIERRE', backgroundMedia: 'portada2.mp4', index: slides.length }
+    ...slides.map((s, i) => ({ ...s, index: i }))
   ], [slides]);
 
   const [currentPage, setCurrentPage] = useState(0);
