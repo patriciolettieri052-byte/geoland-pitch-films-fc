@@ -30,7 +30,7 @@ export const slides: SlideData[] = [
   {
     id: 2,
     title: "UNA LOCACIÓN NO ES SOLO FILMAR",
-    text: "<span style='font-size: 15px; color: #ffffff; font-family: \"Arimo\", sans-serif;'>— <em>NYC Mayor’s Office of Media & Entertainment.</em></span>",
+    text: "",
     variant: "titulo-chico",
     backgroundMedia: "1.mp4",
     overlayOpacity: 45
@@ -39,7 +39,7 @@ export const slides: SlideData[] = [
     id: 3,
     title: "SON PERMISOS, ACCESOS, TRÁFICO, PARKING, SEGURIDAD, EQUIPO, COMUNIDAD, RUIDO Y CIENTOS DE VARIABLES MÁS.",
     text: "",
-    variant: "titulo-grande",
+    variant: "subtitulo",
     backgroundMedia: "2.mp4",
     overlayOpacity: 45
   },
