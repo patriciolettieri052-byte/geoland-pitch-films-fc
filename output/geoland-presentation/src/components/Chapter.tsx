@@ -177,10 +177,10 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
             <>
               <img 
                 src={`assets/${backgroundMedia}`} 
-                className={`w-full h-full object-cover ${id === 12 ? 'print:hidden' : ''}`}
+                className={`w-full h-full object-cover ${id === 13 ? 'print:hidden' : ''}`}
                 alt="background"
               />
-              {id === 12 && (
+              {id === 13 && (
                 <img 
                   src="assets/12.png" 
                   className="w-full h-full object-cover hidden print:block"
@@ -212,8 +212,8 @@ const Chapter: React.FC<ChapterProps> = ({ id, title, overline, text, background
         className={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' || variant === 'proyecciones-hud' ? "absolute inset-0 z-30" : `relative z-20 w-full px-8 flex flex-col ${align === 'left' ? 'items-start text-left' : align === 'right' ? 'items-end text-right' : align === 'center-left' ? 'items-center text-left' : 'items-center text-center'}`}
         style={variant === 'neural-map' || variant === 'roadmap' || variant === 'advisors' || variant === 'validation-hud' || variant === 'proyecciones-hud' ? { width: '100%', height: '100%' } : { 
           maxWidth: maxWidth || (variant?.startsWith('backtest') || variant === 'business-units' || variant === 'reviews' ? '1400px' : '1045px'),
-          paddingLeft: align === 'left' ? ((id >= 24 && id <= 29) || id === 34 ? '120px' : '50px') : undefined,
-          paddingRight: align === 'right' ? ((id >= 24 && id <= 29) || id === 34 ? '120px' : '50px') : undefined,
+          paddingLeft: align === 'left' ? ((id >= 25 && id <= 30) || id === 35 ? '120px' : '50px') : undefined,
+          paddingRight: align === 'right' ? ((id >= 25 && id <= 30) || id === 35 ? '120px' : '50px') : undefined,
           paddingTop: '80px',
           paddingBottom: '80px'
         }}
