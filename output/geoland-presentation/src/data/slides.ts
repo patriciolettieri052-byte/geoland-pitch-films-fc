@@ -20,6 +20,7 @@ export interface SlideData {
 export const slides: SlideData[] = [
 
 
+
   {
     id: 1,
     title: "PROBLEM",
@@ -41,15 +42,15 @@ export const slides: SlideData[] = [
     title: "SON PERMISOS, ACCESOS, TRÁFICO, PARKING, SEGURIDAD, EQUIPO, COMUNIDAD, RUIDO Y CIENTOS DE VARIABLES MÁS.",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "3.mp4",
-    overlayOpacity: 45,
+    backgroundMedia: "",
+    overlayOpacity: 0,
   },
   {
     id: 4,
     title: "TODAS LAS VARIABLES FRAGMENTADAS. HACIENDO LA TAREA LENTA Y COSTOSA.",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "4.mp4",
+    backgroundMedia: "3.mp4",
     overlayOpacity: 45,
   },
   {
@@ -57,7 +58,7 @@ export const slides: SlideData[] = [
     title: "<span style='font-size: 140px; display: block; line-height: 0.9; margin-bottom: 16px; font-family: \"League Gothic\", sans-serif;'>1</span>UNA SOLA VARIABLE NO DETECTADA COMPROMETE TODA LA PRODUCCIÓN.",
     text: "",
     variant: "titulo-chico",
-    backgroundMedia: "5.mp4",
+    backgroundMedia: "4.mp4",
     overlayOpacity: 45,
   },
   {
@@ -107,7 +108,7 @@ export const slides: SlideData[] = [
   </div>
 </div>`,
     variant: "titulo-chico",
-    backgroundMedia: "6.mp4",
+    backgroundMedia: "5.mp4",
     overlayOpacity: 45,
     align: "center-left",
     maxWidth: "1250px"
@@ -117,7 +118,7 @@ export const slides: SlideData[] = [
     title: "UNA OBRA EN CONSTRUCCIÓN AL LADO DEL SET NO DETECTADA",
     text: "Martillos, taladros y vibraciones contaminan el sonido directo. La escena no puede rodarse aunque la locación sea perfecta.",
     variant: "titulo-chico",
-    backgroundMedia: "7.mp4",
+    backgroundMedia: "6.mp4",
     overlayOpacity: 45,
   },
   {
@@ -125,7 +126,7 @@ export const slides: SlideData[] = [
     title: "UN FESTIVAL A METROS DEL RODAJE",
     text: "Accesos bloqueados, tráfico cortado y seguridad alterada. La producción queda detenida mientras el presupuesto sigue corriendo.",
     variant: "titulo-chico",
-    backgroundMedia: "8.mp4",
+    backgroundMedia: "7.mp4",
     overlayOpacity: 45,
   },
   {
@@ -133,7 +134,7 @@ export const slides: SlideData[] = [
     title: "UNA RUTA AÉREA SOBRE UNA ESCENA DE ÉPOCA",
     text: "Cada pocos minutos cruza un avión. La imagen no funciona, el sonido tampoco.",
     variant: "titulo-chico",
-    backgroundMedia: "9.mp4",
+    backgroundMedia: "8.mp4",
     overlayOpacity: 45,
   },
   {
@@ -141,7 +142,7 @@ export const slides: SlideData[] = [
     title: "<div class='flex flex-col items-start justify-start text-left w-full mb-4 pt-4' style='line-height: 1.2;'><img src='assets/revenant-logo.png' alt='The Revenant' class='w-auto h-[55px] md:h-[85px] object-contain mb-3 block' /><span class='block'>FALTA DE NIEVE</span></div>",
     text: "<div class='text-left w-full'><strong>Problema real:</strong> la producción estaba rodando en Canadá, pero se quedaron sin nieve para una película que dependía visualmente de paisajes nevados. Eligieron mal.<br/><br/><strong>Consecuencia:</strong> tuvieron que mover parte de la producción a Patagonia, Argentina.<br/><br/><strong>Impacto económico:</strong> el traslado y seis días extra de rodaje en Patagonia costaron aproximadamente<br/><strong>USD 10M</strong> no previstos.</div>",
     variant: "titulo-chico",
-    backgroundMedia: "10.mp4",
+    backgroundMedia: "9.mp4",
     overlayOpacity: 45,
     align: "center-left",
     maxWidth: "750px"
@@ -151,7 +152,7 @@ export const slides: SlideData[] = [
     title: "EL PROBLEMA NO ES ENCONTRAR UNA BUENA LOCACIÓN.",
     text: "ES DESCUBRIR DEMASIADO TARDE QUE NUNCA DEBIÓ ELEGIRSE.",
     variant: "titulo-chico",
-    backgroundMedia: "10-2.png",
+    backgroundMedia: "10.mp4",
     overlayOpacity: 45,
   },
   {
@@ -159,8 +160,8 @@ export const slides: SlideData[] = [
     title: "EL PROBLEMA NO ES LA FALTA DE INFORMACIÓN.",
     text: "ES LA INCAPACIDAD HUMANA PARA CONECTARLA.",
     variant: "titulo-chico",
-    backgroundMedia: "",
-    overlayOpacity: 0
+    backgroundMedia: "10-2.png",
+    overlayOpacity: 45,
   },
   {
     id: 13,
